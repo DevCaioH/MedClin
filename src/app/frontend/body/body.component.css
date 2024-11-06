@@ -1,0 +1,89 @@
+
+
+.body {
+    background-color: rgb(228, 228, 228);
+    width: 86%; /* Aumentei a largura para ter mais espaço */
+    height: auto;
+    min-height: 600px; /* Defini uma altura mínima */
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 20px; /* Adicionei padding para o corpo */
+    box-sizing: border-box; /* Para garantir que o padding não afete o layout */
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.321);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para garantir que os cards tenham espaçamento entre eles */
+    gap: 20px; /* Adiciona um espaçamento entre os cards */
+    width: 100%;
+    max-width: 100%; /* Limita a largura máxima */
+}
+
+.card {
+    background-color: white;
+    width: 30%; /* Cada card ocupará 30% da largura do container */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
+    transition: transform 0.3s ease; /* Transição suave para efeito hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 200px; /* Altura fixada para a imagem */
+    object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+@media(max-width:1589px){
+    .body {
+        background-color: rgb(213, 213, 213);
+        width: 82%; /* Aumentei a largura para ter mais espaço */
+        height: auto;
+        min-height: 600px; /* Defini uma altura mínima */
+        border-radius: 15px;
+        margin: 20px auto;
+        padding: 20px; /* Adicionei padding para o corpo */
+        box-sizing: border-box; /* Para garantir que o padding não afete o layout */
+        display: flex;
+        justify-content: center;
+    }
+}
