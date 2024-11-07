@@ -5,5 +5,6 @@ import { PacientesBodyComponent } from './frontend/pacientes/pacientes-body/paci
 
 export const routes: Routes = [
   { path: '', component: BodyComponent },  // Rota padrão
-  { path: 'pacientes', component: PacientesBodyComponent },  // Rota para pacientes
+  { path: 'pacientes', component: PacientesBodyComponent },
+  { path: '**', redirectTo: '' },
 ];
