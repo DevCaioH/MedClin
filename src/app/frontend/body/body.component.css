@@ -1,26 +1,25 @@
 
 
 .body {
-    background-color: rgb(228, 228, 228);
-    width: 86%; /* Aumentei a largura para ter mais espaço */
-    height: auto;
-    min-height: 600px; /* Defini uma altura mínima */
-    border-radius: 15px;
-    margin: 20px auto;
-    padding: 20px; /* Adicionei padding para o corpo */
-    box-sizing: border-box; /* Para garantir que o padding não afete o layout */
-    display: flex;
-    justify-content: center;
-    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.321);
+    background-color:#2D3E50;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
+    background-color:  #F0F2F5;
+    width: 90%;
+    max-width: 1600px; /* Limita a largura máxima da área do container */
+    min-height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Para garantir que os cards tenham espaçamento entre eles */
-    gap: 20px; /* Adiciona um espaçamento entre os cards */
-    width: 100%;
-    max-width: 100%; /* Limita a largura máxima */
+    gap: 20px;
+    justify-content: center; /* Centraliza os cards dentro do container */
 }
 
 .card {
@@ -75,15 +74,24 @@
 
 @media(max-width:1589px){
     .body {
-        background-color: rgb(213, 213, 213);
-        width: 82%; /* Aumentei a largura para ter mais espaço */
+        background-color:#2D3E50;
+        width: 100%;
         height: auto;
-        min-height: 600px; /* Defini uma altura mínima */
+        margin: 0;
+    }
+
+    .container {
+        background-color:  #F0F2F5;
+        width: 83%;
+        max-width: 1600px; /* Limita a largura máxima da área do container */
+        min-height: 600px;
         border-radius: 15px;
-        margin: 20px auto;
-        padding: 20px; /* Adicionei padding para o corpo */
-        box-sizing: border-box; /* Para garantir que o padding não afete o layout */
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; /* Centraliza os cards dentro do container */
     }
 }

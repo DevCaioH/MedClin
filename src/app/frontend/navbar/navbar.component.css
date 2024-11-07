@@ -1146,13 +1146,13 @@
       }
     }
 
-    @media (max-width: 1189px){
+    @media (max-width: 386px){
         .navbar{
             display: none;
         }
     }
     
-    @media (max-height: 512px){
+    @media (max-height: 412px){
         .navbar{
             display: none;
         }

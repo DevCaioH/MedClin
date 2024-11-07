@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { BodyComponent } from "./frontend/body/body.component";
 import { ProgramComponent } from "./frontend/program/program.component";
 import feather from 'feather-icons';
+import { PacientesPageComponent } from "./frontend/pacientes/pacientes-page/pacientes-page.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BodyComponent, ProgramComponent],
+  imports: [RouterOutlet, BodyComponent, ProgramComponent, PacientesPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
