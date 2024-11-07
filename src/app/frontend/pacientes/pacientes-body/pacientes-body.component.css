@@ -12,14 +12,19 @@
     width: 90%;
     max-width: 1600px; /* Limita a largura máxima da área do container */
     min-height: 600px;
+    max-height: 90vh;
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    overflow: scroll;
     justify-content: center; /* Centraliza os cards dentro do container */
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
 }
 
 
@@ -37,13 +42,26 @@
         width: 83%;
         max-width: 1600px; /* Limita a largura máxima da área do container */
         min-height: 600px;
+        max-height: 90vh;
         border-radius: 15px;
-        
+        padding: 20px;
         box-sizing: border-box;
         box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+        overflow: scroll;
         justify-content: center; /* Centraliza os cards dentro do container */
     }
+}
+
+
+
+.table-custom{
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+
+}
+
+.table-custom .button-custom{
+
+    margin-left: 2px;
 }

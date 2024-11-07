@@ -1157,3 +1157,9 @@
             display: none;
         }
     }
+
+    .navbar__link.active {
+      background-color: #007bff;  /* Cor de fundo para o item ativo */
+      color: white;  /* Cor do texto */
+      border-radius: 5px; /* Bordas arredondadas */
+    }
