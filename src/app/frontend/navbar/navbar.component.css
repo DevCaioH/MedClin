@@ -1157,3 +1157,17 @@
             display: none;
         }
     }
+
+    .navbar__link.active {
+      background-color: #2eabffcb;  /* Cor de fundo para o item ativo */
+      color: white;  /* Cor do texto */
+
+      z-index: 1;
+      top: 0;
+      left: 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 2px solid #00df82;
+      border: 2px solid 00df82;
+      border-radius: 17.5px;
+    }
