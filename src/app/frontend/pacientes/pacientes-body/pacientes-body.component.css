@@ -1,16 +1,17 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .body {
-    background-color:#2D3E50;
+    background-color: #2D3E50;
     width: 100%;
     height: 100vh;
     margin: 0;
 }
 
 .container {
-    background-color:  #F0F2F5;
+    background-color: #F0F2F5;
     width: 90%;
-    max-width: 1600px; /* Limita a largura máxima da área do container */
+    max-width: 1600px;
+    /* Limita a largura máxima da área do container */
     min-height: 600px;
     max-height: 90vh;
     border-radius: 15px;
@@ -18,10 +19,12 @@
     box-sizing: border-box;
     box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
     overflow: scroll;
-    justify-content: center; /* Centraliza os cards dentro do container */
+    justify-content: center;
+    /* Centraliza os cards dentro do container */
 }
 
-h1{
+h1 {
+    font-family: Oswald;
     text-align: center;
     font-weight: bold;
     padding: 10px;
@@ -29,18 +32,19 @@ h1{
 
 
 
-@media(max-width:1589px){
+@media(max-width:1589px) {
     .body {
-        background-color:#2D3E50;
+        background-color: #2D3E50;
         width: 100%;
         height: 100vh;
         margin: 0;
     }
 
     .container {
-        background-color:  #F0F2F5;
+        background-color: #F0F2F5;
         width: 83%;
-        max-width: 1600px; /* Limita a largura máxima da área do container */
+        max-width: 1600px;
+        /* Limita a largura máxima da área do container */
         min-height: 600px;
         max-height: 90vh;
         border-radius: 15px;
@@ -48,20 +52,21 @@ h1{
         box-sizing: border-box;
         box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
         overflow: scroll;
-        justify-content: center; /* Centraliza os cards dentro do container */
+        justify-content: center;
+        /* Centraliza os cards dentro do container */
     }
 }
 
 
 
-.table-custom{
+.table-custom {
     align-items: center;
     text-align: center;
     overflow: scroll;
 
 }
 
-.table-custom .button-custom{
+.table-custom .button-custom {
 
     margin-left: 2px;
 }
