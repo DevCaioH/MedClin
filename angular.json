@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/siscram",
             "index": "src/index.html",
+            "main": "src/main.ts", 
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"

@@ -16,8 +16,9 @@ export class NavbarComponent {
     { label: 'Início', icon: 'home', href: '/'},
     { label: 'Mensagens', icon: 'message-square', href: '/'},
     { label: 'Pacientes', icon: 'users' , href: '/pacientes'},
-    { label: 'Arquivos', icon: 'folder' , href: '/atestados'},
+    { label: 'Atestados', icon: 'folder' , href: '/atestados'},
     { label: 'Prontuarios', icon: 'archive' , href: '/prontuarios'},
+    { label: 'Receitas', icon: 'clipboard' , href: '/receitas'},
     { label: 'Ajuda', icon: 'help-circle' , href: '/'},
     { label: 'Configurações', icon: 'settings' , href: '/'},
   ];
