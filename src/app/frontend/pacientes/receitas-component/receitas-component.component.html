@@ -2,7 +2,7 @@
 
     <br>
     <div class="container">
-        <h1>Procurar Paciente</h1>
+        <h1>Procurar Receitas</h1>
         <form action="" class="custom-form">
           <form class="row g-3">
             <div class="col-md-3">
@@ -18,10 +18,10 @@
               <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
               </div>
             <div class="col-md-6">
-              <label for="inputZip" class="form-label">ID do Paciente</label>
+              <label for="inputZip" class="form-label">ID da Receita</label>
               <input type="text" class="form-control" id="inputZip">
             </div>
-            <div class="col-6">
+            <div class="col-12">
               <button type="submit" class="btn btn-primary button-custom-verificar">Verificar</button>
               <button type="submit" class="btn btn-danger button-custom-deletar">Limpar</button>
             </div>
@@ -33,9 +33,7 @@
                 <tr>
                     <th class="text-center">#</th>
                     <th>Paciente</th>
-                    <th>Idade</th>
-                    <th>Telefone</th>
-                    <th class="text-right">Ultima Consulta</th>
+                    <th>Data da Criação</th>
                     <th class="text-right">Ações</th>
                 </tr>
             </thead>
@@ -43,19 +41,11 @@
         
                 <tr>
                     <td class="text-center">1</td>
-                    <td>Teste</td>
-                    <td>XX</td>
-                    <td class="text-right">€ 49,990</td>
-                    <td>XX/XX/XXXX</td>
+                    <td>XXX</td>
+                    <td class="text-right">XX/XX/XXXX</td>
                     <td class="td-actions text-right">
                         <button type="button" rel="tooltip" class="btn btn-info btn-round btn-just-icon btn-sm button-custom" data-original-title="" title="">
-                            <i data-feather="user">user</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-success btn-round btn-just-icon btn-sm button-custom" data-original-title="" title="">
-                          <i  data-feather="edit">edit</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-danger btn-round btn-just-icon btn-sm button-custom" data-original-title="" title="">
-                          <i data-feather="trash-2">trash-2</i>
+                            <i data-feather="file">file</i>
                         </button>
                     </td>
                 </tr>

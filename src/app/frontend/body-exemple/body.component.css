@@ -24,8 +24,10 @@
 
 .card {
     background-color: white;
+   
     width: 30%; /* Cada card ocupará 30% da largura do container */
     border-radius: 10px;
+    height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
     overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
     transition: transform 0.3s ease; /* Transição suave para efeito hover */
@@ -34,31 +36,54 @@
 .card:hover {
     transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
 }
-
-.card-img-top {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
-    height: 200px; /* Altura fixada para a imagem */
-    object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+.card-cover {
+    position: relative;
+    background-size: cover;
+    color: white;
 }
+
+.card-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: 1; /* Coloca a camada cinza sobre a imagem */
+}
+
+.card-cover .d-flex {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo esteja acima da camada escurecida */
+}
+
 
 .card-body {
     padding: 15px;
+    background-color: #4c6681;
+    color: white;
+    text-align: center;
+    bottom: 5px;
+    ;
 }
 
 .card-title {
+    color: #7ccbffcb;
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .card-text {
+    color: white;
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
+ 
+    
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #31886b;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -68,9 +93,12 @@
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #15a502e0;
 }
 
+a {
+    text-align: center;
+}
 
 @media(max-width:1589px){
     .body {
@@ -94,4 +122,9 @@
         gap: 20px;
         justify-content: center; /* Centraliza os cards dentro do container */
     }
+}
+
+
+.red{
+    color: rgb(255, 95, 95);
 }

@@ -4,7 +4,10 @@
             <img src="/assets/img/logo.png" medclinHover alt="" class="img-logo navbar_link_logo">
         </li>
         <li class="navbar__item" *ngFor="let item of navItems; let i = index">
-            <a [href]="item.href" class="navbar__link"><i [attr.data-feather]="item.icon"></i><span>{{ item.label }}</span></a>
+            <a [routerLink]="item.href" class="navbar__link" [ngClass]="{'active': selectedNavItem === i}" (click)="selectNavItem(i)">
+                <i [attr.data-feather]="item.icon"></i><span>{{ item.label }}</span>
+              </a>
+              
         </li>
     </ul>
 </nav>

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet} from '@angular/router';
-
+import { RouterModule, RouterOutlet} from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule,RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -17,8 +16,9 @@ export class NavbarComponent {
     { label: 'Início', icon: 'home', href: '/'},
     { label: 'Mensagens', icon: 'message-square', href: '/'},
     { label: 'Pacientes', icon: 'users' , href: '/pacientes'},
-    { label: 'Arquivos', icon: 'folder' , href: '/'},
-    { label: 'Prontuários', icon: 'archive' , href: '/atendimentos'},
+    { label: 'Atestados', icon: 'folder' , href: '/atestados'},
+    { label: 'Prontuarios', icon: 'archive' , href: '/prontuarios'},
+    { label: 'Receitas', icon: 'clipboard' , href: '/receitas'},
     { label: 'Ajuda', icon: 'help-circle' , href: '/'},
     { label: 'Configurações', icon: 'settings' , href: '/configuracoes'},
   ];

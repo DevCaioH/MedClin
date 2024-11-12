@@ -1,0 +1,23 @@
+
+.body {
+    background-color:#2D3E50;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+   
+    background-color:  #F0F2F5;
+    width: 90%;
+    max-width: 1600px; /* Limita a largura máxima da área do container */
+    min-height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 8px rgba(120, 218, 254, 0.975);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os cards dentro do container */
+}
