@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet,NavigationEnd } from '@angular/router';
 import { ProgramComponent } from "./frontend/program/program.component";
-import { ChartConfiguration, ChartType } from 'chart.js';
 
 import feather from 'feather-icons';
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "siscram": {
+    "MedClin": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,9 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/siscram",
+            "outputPath": "dist/med-clin",
             "index": "src/index.html",
-            "main": "src/main.ts", 
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -31,12 +30,7 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","node_modules/feather-icons/dist/feather.min.js"],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -66,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "siscram:build:production"
+              "buildTarget": "MedClin:build:production"
             },
             "development": {
-              "buildTarget": "siscram:build:development"
+              "buildTarget": "MedClin:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,6 +95,6 @@
     }
   },
   "cli": {
-    "analytics": "a5cb714d-9f89-46d6-a62e-7d2a6dccd536"
+    "analytics": "3bda7c40-397d-4ace-a5e1-71596dd9e595"
   }
 }
