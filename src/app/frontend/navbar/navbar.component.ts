@@ -18,13 +18,13 @@ export class NavbarComponent {
     { label: 'Mensagens', icon: 'message-square', href: '/'},
     { label: 'Pacientes', icon: 'users' , href: '/pacientes'},
     { label: 'Arquivos', icon: 'folder' , href: '/'},
-    { label: 'Prontuários', icon: 'archive' , href: '/'},
+    { label: 'Prontuários', icon: 'archive' , href: '/atendimentos'},
     { label: 'Ajuda', icon: 'help-circle' , href: '/'},
-    { label: 'Configurações', icon: 'settings' , href: '/'},
+    { label: 'Configurações', icon: 'settings' , href: '/configuracoes'},
   ];
   selectNavItem(index: number): void {
     this.selectedNavItem = index;  // Atualiza o item selecionado
   }
-
+  
   
 }

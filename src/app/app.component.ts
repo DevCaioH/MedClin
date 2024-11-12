@@ -4,12 +4,14 @@ import { ProgramComponent } from "./frontend/program/program.component";
 
 import feather from 'feather-icons';
 import { LoginSystemComponent } from "./frontend/program/login-system/login-system.component";
+import { AtendimentoPacienteComponent } from "./frontend/pacientes/atendimento-paciente/atendimento-paciente.component";
+import { ConfiguracoesProgramaComponent } from "./frontend/program/configuracoes-programa/configuracoes-programa.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProgramComponent, RouterOutlet, LoginSystemComponent],
+  imports: [ProgramComponent, RouterOutlet, LoginSystemComponent, AtendimentoPacienteComponent, ConfiguracoesProgramaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
