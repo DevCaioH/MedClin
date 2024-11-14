@@ -1,50 +1,65 @@
+
+@if(formulario.get("CID")?.hasError('required') && formulario.get("CID")?.touched) {
+
+    <div class="alert alert-danger alert-dismissible fade show fixed" id="cidAlert">
+        O Elemento <strong>CID</strong> É obrigatório para salvar o prontuário
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="fecharAlerta()"
+        ></button>
+      </div>
+ }
+
+
 <div class="body py-5">
+
     <div class="container">
+        
         <h1 class="text-center mb-4">Atendimento</h1>
-        <form action="" class="row g-4 form-custom">
+      
+        <form action="" class="row g-4 form-custom" [formGroup]="formulario">
             <div class="col-sm-6">
                 <label for="firstName" class="form-label text-muted">Primeiro Nome</label>
-                <input type="text" class="form-control shadow-sm" id="firstName" placeholder="Digite o nome" value="" readonly>
+                <input type="text"  formControlName="nome_listagem" class="form-control shadow-sm" id="firstName" placeholder="Digite o nome" value="" readonly>
             </div>
 
             <div class="col-sm-6">
                 <label for="lastName" class="form-label text-muted">Último Nome</label>
-                <input type="text" class="form-control shadow-sm" id="lastName" placeholder="Digite o sobrenome" value="" readonly>
+                <input type="text"  formControlName="sobrenome_listagem" class="form-control shadow-sm" id="lastName" placeholder="Digite o sobrenome" value="" readonly>
             </div>
 
             <div class="col-sm-3">
                 <label for="id" class="form-label text-muted">ID</label>
-                <input type="text" class="form-control shadow-sm" id="id" placeholder="ID do paciente" value="" readonly>
+                <input type="text"  formControlName="id_listagem"class="form-control shadow-sm" id="id" placeholder="ID do paciente" value="" readonly>
             </div>
 
             <div class="col-sm-3">
                 <label for="dob" class="form-label text-muted">Data de Nascimento</label>
-                <input type="date" class="form-control shadow-sm" id="dob" value="" readonly>
+                <input type="date"  formControlName="nascimento_listagem" class="form-control shadow-sm" id="dob" value="" readonly>
             </div>
 
             <div class="col-sm-3">
                 <label for="lastCid" class="form-label text-muted">Último CID</label>
-                <input type="text" class="form-control shadow-sm" id="lastCid" placeholder="Código CID" value="" readonly>
+                <input type="text"  formControlName="cid_listagem" class="form-control shadow-sm" id="lastCid" placeholder="Código CID" value="" readonly>
             </div>
 
             <div class="col-sm-12">
                 <label for="medicalRecord" class="form-label text-muted">Prontuário</label>
-                <textarea class="form-control shadow-sm" id="medicalRecord" rows="6" readonly placeholder="Prontuário médico do paciente..."></textarea>
+                <textarea  formControlName="prontuario_listagem" class="form-control shadow-sm" id="medicalRecord" rows="6" readonly placeholder="Prontuário médico do paciente..."></textarea>
             </div>
 
             <div class="col-sm-12">
                 <label for="consultation" class="form-label text-muted">Consulta</label>
-                <textarea class="form-control shadow-sm" id="consultation" rows="6" placeholder="Descrição da consulta..."></textarea>
+                <textarea  formControlName="consulta" class="form-control shadow-sm" id="consultation" rows="6" placeholder="Descrição da consulta..."></textarea>
             </div>
-
+          
             <div class="col-sm-6">
+
                 <label for="cid" class="form-label text-muted">CID</label>
-                <input type="text" class="form-control shadow-sm" id="cid" placeholder="Código CID" value="">
+                <input type="text"  formControlName="CID" class="form-control shadow-sm" id="cid" placeholder="Código CID" value="Caio">
             </div>
 
             <div class="col-sm-6">
                 <label for="currentDate" class="form-label text-muted">Data Atual</label>
-                <input type="date" class="form-control shadow-sm" id="currentDate" value="">
+                <input type="text" formControlName="Data" placeholder="{{dataformatada}}" class="form-control shadow-sm" id="currentDate" value ="" readonly>
             </div>
 
             <div class="col-sm-6 d-flex justify-content-center">
@@ -52,7 +67,7 @@
             </div>
 
             <div class="col-sm-6 d-flex justify-content-center">
-                <button class="w-100 btn btn-success btn-lg shadow-sm" type="submit">Salvar</button>
+                <button class="w-100 btn btn-success btn-lg shadow-sm" type="submit" [disabled]="formulario.invalid">Salvar</button>
             </div>
         </form>
     </div>

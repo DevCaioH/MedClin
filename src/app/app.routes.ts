@@ -7,6 +7,7 @@ import { AtestadosComponentComponent } from './frontend/pacientes/atestados-comp
 import { ProntuarioComponentComponent } from './frontend/pacientes/prontuario-component/prontuario-component.component';
 import { ReceitasComponentComponent } from './frontend/pacientes/receitas-component/receitas-component.component';
 import { ReceitasComponent } from './frontend/pacientes/receitas/receitas.component';
+
 export const routes: Routes = [
   { path: '', component: BodyComponent },  // Rota padrão
   { path: 'pacientes', component: PacientesBodyComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
   { path: 'prontuarios', component: ProntuarioComponentComponent },
   { path: 'receitas', component: ReceitasComponentComponent },
   { path: 'relatorioReceitas', component: ReceitasComponent },
+  { path: 'atendimentos', component: AtendimentoPacienteComponent },
   { path: '**', redirectTo: '' },
 ];

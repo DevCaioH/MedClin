@@ -33,7 +33,7 @@ h1{
     .body {
         background-color:#2D3E50;
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0;
     }
 
@@ -64,4 +64,10 @@ h1{
 .table-custom .button-custom{
 
     margin-left: 2px;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    margin-top: 10px;
 }
