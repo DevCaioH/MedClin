@@ -20,11 +20,11 @@ export class NavbarComponent {
     { label: 'Prontuarios', icon: 'archive' , href: '/prontuarios'},
     { label: 'Receitas', icon: 'clipboard' , href: '/receitas'},
     { label: 'Ajuda', icon: 'help-circle' , href: '/'},
-    { label: 'Configurações', icon: 'settings' , href: '/'},
+    { label: 'Configurações', icon: 'settings' , href: '/configuracoes'},
   ];
   selectNavItem(index: number): void {
     this.selectedNavItem = index;  // Atualiza o item selecionado
   }
-
+  
   
 }
