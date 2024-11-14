@@ -1,7 +1,7 @@
 <nav class="navbar">
     <ul class="navbar__menu">
         <li class="navbar__item">
-            <img src="/assets/img/logo.png" alt="" class="img-logo navbar_link_logo">
+            <img src="/assets/img/logo.png" medclinHover alt="" class="img-logo navbar_link_logo">
         </li>
         <li class="navbar__item" *ngFor="let item of navItems; let i = index">
             <a [routerLink]="item.href" class="navbar__link" [ngClass]="{'active': selectedNavItem === i}" (click)="selectNavItem(i)">
